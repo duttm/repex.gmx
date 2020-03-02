@@ -1,0 +1,17 @@
+#time,event,comp,thread,uid,state,msg
+1583173832.7340775,sync_abs,pmgr_launching.0000,MainThread,,,IKELOS:172.25.99.111:1583173832.733741:1583173834.445719:ntp
+1583173832.7375526,comp_start,pmgr_launching.0000,MainThread,pmgr_launching.0000,,
+#time,event,comp,thread,uid,state,msg
+1583173832.9996760,sync_abs,pmgr_launching.0000,MainThread,,,IKELOS:172.25.99.111:1583173832.9994605:1583173834.7114384:ntp
+1583173832.9998436,init1,pmgr_launching.0000,MainThread,pmgr_launching.0000,,/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000
+1583173833.0366111,component_init,pmgr_launching.0000,Thread-1,,,
+1583173835.8585482,get,pmgr_launching.0000,Thread-1,pilot.0000,PMGR_LAUNCHING_PENDING,
+1583173835.8586600,advance,pmgr_launching.0000,Thread-1,pilot.0000,PMGR_LAUNCHING,
+1583173836.3659320,staging_in_start,pmgr_launching.0000,Thread-1,pilot.0000,,
+1583173840.3974638,staging_in_stop,pmgr_launching.0000,Thread-1,pilot.0000,,
+1583173840.3975644,submission_start,pmgr_launching.0000,Thread-1,pilot.0000,,
+1583173841.7268405,submission_stop,pmgr_launching.0000,Thread-1,pilot.0000,,
+1583173841.7269301,advance,pmgr_launching.0000,Thread-1,pilot.0000,PMGR_ACTIVE_PENDING,
+1583174147.2944560,advance,pmgr_launching.0000,Thread-3,pilot.0000,DONE,
+1583174191.9321163,component_final,pmgr_launching.0000,Thread-4,,,
+1583174191.9322028,END,pmgr_launching.0000,Thread-4,,,

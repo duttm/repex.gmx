@@ -1,0 +1,17 @@
+{
+    "bulk_size": 0,
+    "channel": "umgr_staging_output_queue",
+    "cmgr": "cmgr.0002",
+    "heartbeat": {
+        "addr_pub": "tcp://172.25.99.111:42563",
+        "addr_sub": "tcp://172.25.99.111:44153",
+        "interval": 1.0,
+        "timeout": 60.0
+    },
+    "kind": "queue",
+    "log_level": "error",
+    "path": "/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000",
+    "sid": "re.session.IKELOS.srinivas.018323.0000",
+    "stall_hwm": 1,
+    "uid": "umgr_staging_output_queue"
+}

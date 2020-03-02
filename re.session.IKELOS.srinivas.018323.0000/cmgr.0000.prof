@@ -1,0 +1,8 @@
+#time,event,comp,thread,uid,state,msg
+1583173823.4310350,sync_abs,cmgr.0000,MainThread,,,IKELOS:172.25.99.111:1583173823.430785:1583173825.142763:ntp
+1583173823.4316018,init2,cmgr.0000,MainThread,cmgr.0000,,/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000
+1583173824.4533393,start_bridges_start,cmgr.0000,MainThread,cmgr.0000,,
+1583173826.6616354,start_bridges_stop,cmgr.0000,MainThread,cmgr.0000,,
+1583173826.6617506,start_components_start,cmgr.0000,MainThread,cmgr.0000,,
+1583173829.6524820,start_components_stop,cmgr.0000,MainThread,cmgr.0000,,
+1583174131.6616330,close,cmgr.0000,MainThread,cmgr.0000,,

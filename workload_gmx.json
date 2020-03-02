@@ -1,0 +1,89 @@
+
+{
+    "config" : {
+        # parameters for ensemble creation and execution
+        "min_temp"       : 300,
+        "max_temp"       : 400,
+        "timesteps"      : 10,
+        "replicas"       : 4,
+        "cycles"         : 3
+    },
+
+    "data" : {
+        # input data dir to be staged, output data to be fetched
+        # same paths are used within pilot sandbox
+        # FIXME: allow $SID placeholder
+        "inputs"         : "inputs/",
+        "outputs"        : "outputs/"
+    },
+
+    "prepare"            : {
+        # what to run to prepare input data for all replicas
+        "algorithm"      : "workload_md.py:prepare_md",
+        "basename"       : "FF"
+    },
+
+    "md" : {
+        # workload for the MD stage (task description + data dependencies)
+        "executable"     : "/home/srinivas/Downloads/gromacs-2019.4/build/bin/gmx",
+        "arguments"      : [ "mdrun",
+                            "-s",      "sys.tpr", 
+                            "-deffnm", "sys", 
+                            "-c",      "outcrd.gro", 
+                            "-e",      "sys.edr"
+
+                           ],
+        "cpu_reqs"       : {"processes"          : 1,
+                            "threads_per_process": 1,
+                            "thread_type"        : null,
+                            "process_type"       : null
+                           },
+        "pre_exec"       : ["/home/srinivas/Downloads/gromacs-2019.4/build/bin/gmx grompp -f mdin.mdp -c inpcrd.gro -o sys.tpr -p sys.top"],
+        "post_exec"      : ["/home/srinivas/Downloads/gromacs-2019.4/build/bin/gmx energy -f sys.edr -b 0.25 < inp.ener > mdinfo"], 
+
+        # always linked
+        #                   inputs          > cycle n
+        "inputs"         : ["mdin.mdp.%(rid)s > mdin.mdp",
+                            "sys.top          > sys.top",
+                            "sys.itp          > sys.itp",
+                            "inp.ener         > inp.ener",
+                            "martini_v2.2.itp > martini_v2.2.itp"],
+
+        # only linked for cycle 0
+        #                    inputs         > cycle 0
+        "inputs_0"       : ["inpcrd.gro.%(rid)s > inpcrd.gro"],
+
+      # # linked from cycle n to cycle n+1
+      # # FIXME: apparently this cannot happen
+      # #                    cycle n-1      > cycle n
+      # "md_2_md"        : ["mdin           > mdin",
+      #                     "outcrd         > inpcrd"],
+
+        "ex_2_md"        : ["outcrd.gro.%(rid)s > inpcrd.gro"],
+
+        # stage back output from all cycles
+        # FIXME: not enacted yet
+        "outputs"        : ["outcrd.gro         > outcrd.gro.%(rid)s.%(cycle)04d"],
+
+        # only staged back from last cycle (n/a)
+        "outputs_n"      : ["outcrd.gro         > outcrd.gro.%(rid)s.last"]
+    },
+
+    "selection" : {
+        "algorithm"      : "algorithm_select_all.py:select_replicas_all",
+        "exchange_size"  : 4
+    },
+
+    "exchange" : {
+        # workload for the EX stage (algorithm + data dependencies)
+        "algorithm"      : "algorithm_exchange_random.py:exchange_by_temperature",
+        #"algorithm"      : "examples/exchange_algorithm.py:exchange_by_random",
+        # for each replica in ex_list
+        #                    md file > exchange file
+        "md_2_ex"        : ["mdinfo  > mdinfo.%(rid)s",
+                            "outcrd.gro  > outcrd.gro.%(rid)s"],
+        # exchange happens on these
+        "ex_data"        : ["outcrd.gro.%(rid)s"]
+    }
+}
+

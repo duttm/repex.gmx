@@ -1,0 +1,15 @@
+#time,event,comp,thread,uid,state,msg
+1583173820.2042809,sync_abs,radical.entk.resource_manager.0000,MainThread,,,IKELOS:172.25.99.111:1583173820.2041698:1583173821.9161477:ntp
+1583173820.2043438,rmgr obj created,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173820.2044244,rdesc_validate,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173820.2044649,rdesc_valid,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173820.2044816,populating rmgr,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173820.2045057,rmgr populated,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173820.2856743,creating rreq,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173835.1295393,rreq created,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173835.8559873,rreq submitted,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583173885.4385929,resource active,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583174126.1603413,rreq_cancel,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583174132.7189157,rreq_canceled,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583174132.7730534,rreq_cancel,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,
+1583174132.7740114,rreq_canceled,radical.entk.resource_manager.0000,MainThread,resource_manager.0000,,

@@ -1,0 +1,7 @@
+#time,event,comp,thread,uid,state,msg
+1583173825.1325336,sync_abs,log_pubsub,MainThread,,,IKELOS:172.25.99.111:1583173825.1322362:1583173826.8442142:ntp
+1583173825.1396303,bridge_start,log_pubsub,MainThread,log_pubsub,,
+#time,event,comp,thread,uid,state,msg
+1583173825.1409185,sync_abs,log_pubsub,MainThread,,,IKELOS:172.25.99.111:1583173825.1408107:1583173826.8527887:ntp
+1583173825.1409712,init3,log_pubsub,MainThread,log_pubsub,,/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000
+1583174191.5820029,term,log_pubsub,Thread-2,log_pubsub,,

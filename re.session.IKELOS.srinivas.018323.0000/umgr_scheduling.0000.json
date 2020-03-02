@@ -1,0 +1,21 @@
+{
+    "base": "/home/srinivas/gits/rct_repex/repex.gmx",
+    "bulk_collection_size": 100,
+    "bulk_collection_time": 1.0,
+    "cmgr": "cmgr.0002",
+    "count": 1,
+    "db_poll_sleeptime": 1.0,
+    "dburl": "mongodb://repex_3:r3p3x_3@two.radical-project.org:27017/repex_3",
+    "heartbeat": {
+        "addr_pub": "tcp://172.25.99.111:42563",
+        "addr_sub": "tcp://172.25.99.111:44153",
+        "interval": 1.0,
+        "timeout": 60.0
+    },
+    "kind": "umgr_scheduling",
+    "owner": "umgr.0000",
+    "path": "/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000",
+    "scheduler": "round_robin",
+    "sid": "re.session.IKELOS.srinivas.018323.0000",
+    "uid": "umgr_scheduling.0000"
+}

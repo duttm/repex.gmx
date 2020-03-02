@@ -1,0 +1,11 @@
+
+{
+    "rmq_host" : "localhost",
+    "rmq_port" : 32769,
+
+    "resource" : "local.localhost",
+    "walltime" : 10,
+    "cpus"     : 16
+}
+
+

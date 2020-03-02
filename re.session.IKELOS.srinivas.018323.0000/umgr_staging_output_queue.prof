@@ -1,0 +1,7 @@
+#time,event,comp,thread,uid,state,msg
+1583173889.3747535,sync_abs,umgr_staging_output_queue,MainThread,,,IKELOS:172.25.99.111:1583173889.3744645:1583173891.0664077:ntp
+1583173889.4008842,bridge_start,umgr_staging_output_queue,MainThread,umgr_staging_output_queue,,
+#time,event,comp,thread,uid,state,msg
+1583173889.4066074,sync_abs,umgr_staging_output_queue,MainThread,,,IKELOS:172.25.99.111:1583173889.4050946:1583173891.0970378:ntp
+1583173889.4066901,init3,umgr_staging_output_queue,MainThread,umgr_staging_output_queue,,/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000
+1583174172.7486572,term,umgr_staging_output_queue,Thread-2,umgr_staging_output_queue,,

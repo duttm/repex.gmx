@@ -1,0 +1,4 @@
+#time,event,comp,thread,uid,state,msg
+1583173829.7601461,sync_abs,cmgr.0001.hb,MainThread,,,IKELOS:172.25.99.111:1583173829.7599783:1583173831.4719563:ntp
+1583173829.7602108,init3,cmgr.0001.hb,MainThread,cmgr.0001.hb,,/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000
+1583174131.2699068,term,cmgr.0001.hb,MainThread,cmgr.0001.hb,,

@@ -1,0 +1,18 @@
+{
+    "base": "/home/srinivas/gits/rct_repex/repex.gmx",
+    "cmgr": "cmgr.0001",
+    "count": 1,
+    "db_poll_sleeptime": 10.0,
+    "dburl": "mongodb://repex_3:r3p3x_3@two.radical-project.org:27017/repex_3",
+    "heartbeat": {
+        "addr_pub": "tcp://172.25.99.111:36445",
+        "addr_sub": "tcp://172.25.99.111:34327",
+        "interval": 1.0,
+        "timeout": 60.0
+    },
+    "kind": "pmgr_launching",
+    "owner": "pmgr.0000",
+    "path": "/home/srinivas/gits/rct_repex/repex.gmx/re.session.IKELOS.srinivas.018323.0000",
+    "sid": "re.session.IKELOS.srinivas.018323.0000",
+    "uid": "pmgr_launching.0000"
+}
