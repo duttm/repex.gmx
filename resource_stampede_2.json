@@ -1,0 +1,15 @@
+
+{
+    "rmq_host" : "localhost",
+    "rmq_port" : 32773,
+
+    "resource" : "xsede.stampede2_ibrun",
+    "walltime" : 30,
+    "cpus"     : 64,
+    "gpus_per_node" : 0,
+	"access_schema" : "gsissh",
+	"queue"         : "development",
+	"project"       : "TG-DMR140125"
+}
+
+
